@@ -11,6 +11,7 @@ import java.util.Objects;
 @Getter
 @Setter
 @ToString
+@AllArgsConstructor
 @NoArgsConstructor
 @Table(name = "modify_engine")
 public class Engine {

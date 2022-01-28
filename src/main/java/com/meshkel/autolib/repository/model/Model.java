@@ -13,17 +13,20 @@ import java.util.Objects;
 @Setter
 @ToString
 @NoArgsConstructor
+@AllArgsConstructor
 @Table (name = "Model")
 public class Model {
+
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column(name = "id")
     private Long id;
 
-    @Column
-    private Long id_brand;
+    @Column(name = "id_brand")
+    private Long idBrand;
 
-    @Column
-    private String model_name;
+    @Column(name = "Model_name")
+    private String modelName;
 
     @OneToMany(cascade = CascadeType.ALL, fetch = FetchType.EAGER)
     @JoinColumn(name = "id_model", referencedColumnName = "id")

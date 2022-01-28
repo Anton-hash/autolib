@@ -12,6 +12,7 @@ import java.util.Objects;
 @Getter
 @Setter
 @ToString
+@AllArgsConstructor
 @NoArgsConstructor
 @Table(name = "modifications")
 public class Modifications {

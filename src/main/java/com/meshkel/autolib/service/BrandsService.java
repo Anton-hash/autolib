@@ -1,14 +1,13 @@
 package com.meshkel.autolib.service;
 
-import com.meshkel.autolib.repository.BrandsRepository;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Service;
+import com.meshkel.autolib.dto.BrandsDto;
 
-@Service
-public class BrandsService {
+import java.util.List;
 
-    @Autowired
-    private  BrandsRepository brandsrepository;
+public interface BrandsService {
 
+    BrandsDto findByName(String name);
+
+    List<BrandsDto> findAll();
 
 }

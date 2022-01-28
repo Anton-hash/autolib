@@ -8,5 +8,5 @@ import lombok.Data;
 public class BrandsDto {
 
     private Long id;
-    private String brand_name;
+    private String brandName;
 }

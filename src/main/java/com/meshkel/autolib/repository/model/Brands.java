@@ -12,16 +12,18 @@ import java.util.Objects;
 @Getter
 @Setter
 @ToString
-@NoArgsConstructor
 @Table (name = "Brands")
-        public class Brands {
+@NoArgsConstructor
+@AllArgsConstructor
+public class Brands {
 
         @Id
         @GeneratedValue(strategy = GenerationType.IDENTITY)
+        @Column(name = "id")
         private Long id;
 
-        @Column
-        private String brand_name;
+        @Column(name = "Brand_name")
+        private String brandName;
 
         @OneToMany(cascade = CascadeType.ALL, fetch = FetchType.EAGER)
         @JoinColumn(name = "id_brand", referencedColumnName = "id")
