@@ -14,7 +14,7 @@ import java.util.Objects;
 @ToString
 @NoArgsConstructor
 @AllArgsConstructor
-@Table (name = "Model")
+@Table (schema = "public",name = "Model")
 public class Model {
 
     @Id

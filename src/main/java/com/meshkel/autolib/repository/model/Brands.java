@@ -12,9 +12,9 @@ import java.util.Objects;
 @Getter
 @Setter
 @ToString
-@Table (name = "Brands")
 @NoArgsConstructor
 @AllArgsConstructor
+@Table (schema = "public",name = "Brands")
 public class Brands {
 
         @Id

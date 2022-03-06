@@ -3,6 +3,7 @@ package com.meshkel.autolib.controller;
 import com.meshkel.autolib.dto.BrandsDto;
 import com.meshkel.autolib.dto.ModelDto;
 import com.meshkel.autolib.service.BrandsService;
+import com.meshkel.autolib.service.BrandsServiceImpl;
 import com.meshkel.autolib.service.ModelService;
 import lombok.AllArgsConstructor;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -16,7 +17,7 @@ import java.util.List;
 @AllArgsConstructor
 public class StartController {
 
-    private final BrandsService brandsService;
+    private final BrandsServiceImpl brandsService;
     private final ModelService modelService;
 
     @GetMapping("/findAllBrands")
